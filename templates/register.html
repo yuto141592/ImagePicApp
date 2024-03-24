@@ -5,7 +5,7 @@
     <a class="navbar-brand" href="/" style="front-size: 2rem;">ImagePicApp</a>
     <ul class="nav-list" style="margin: 0px;">
         <li class="nav-list-item">
-          <a class="btn-a-9" href="/" role="button">GALLERY</a>
+          <a class="btn-a-9" href="/" role="button">Gallery</a>
         </li>
         <li class="nav-list-item">
           <a class="btn-a-11" href="/about_index" role="button">
@@ -79,20 +79,8 @@
             
         <div class="card" style="margin: auto;">
             <h2>Register Keyword</h2>
-            <form action='/result'>
-                <ul>
-                    <li>
-                        <label id="file_open">
-                            <input type="file" name="name" accept="image/*">
-                        </label>
-                    </li>
-                
-                    <li>
-                        <a name="register"></a>
-                        <button type="submit" formmethod="POST">Go</button>
-                    </li>
-                
-                </ul>
+            <form action="{{url_for('result_post')}}" method="POST" enctype="multipart/form-data">
+                <input type="file" name="example" accept="image/*"><input type="submit" value="upload">
             </form>
             <br>
         </div>
