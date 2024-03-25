@@ -4,6 +4,7 @@ URL : https://yuto141592.github.io/about_ImagePicApp/
 ImagePicAppの説明がされているページです
 <br>
 kabegamiディレクトリ内の画像は自身の創作物になります。
+<p></p>
 <br>
 VSCodeで実行することを想定しています。ZIPファイルをダウンロードしていただき、VSCodeでFile>Open Folder...からImagePicApp-mainを開いてください。その後適切な環境でImagePicApp.pyファイルを実行し、http://localhost:5000/のリンクに飛ぶとImagePicAppがご利用いただけます（readme.txtファイル記載の環境で実行可能であることは確認済み）。
 <p></p><br>
