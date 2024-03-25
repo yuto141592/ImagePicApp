@@ -21,18 +21,14 @@ def index():
     # データベースを開く
     con = get_db()
 
-    # テーブル「商品一覧」の有無を確認
     cur = con.execute("select count(*) from sqlite_master where TYPE='table' AND name='Images'")
 
     for row in cur:
         if row[0] == 0:
-            # テーブル「商品一覧」がなければ作成する
             cur.execute("CREATE TABLE Images(id INTEGER PRIMARY KEY, image_path STRING, image_keyword STRING)")
-            # レコードを作る
-            
+
             con.commit()
     
-    # 商品一覧を読み込み
     cur = con.execute("select * from Images order by id")
     data = cur.fetchall()
     con.close()
@@ -51,18 +47,14 @@ def index_lost():
     # データベースを開く
     con = get_db()
 
-    # テーブル「商品一覧」の有無を確認
     cur = con.execute("select count(*) from sqlite_master where TYPE='table' AND name='Images'")
 
     for row in cur:
         if row[0] == 0:
-            # テーブル「商品一覧」がなければ作成する
             cur.execute("CREATE TABLE Images(id INTEGER PRIMARY KEY, image_path STRING, image_keyword STRING)")
-            # レコードを作る
             
             con.commit()
     
-    # 商品一覧を読み込み
     cur = con.execute("select * from Images order by id")
     data = cur.fetchall()
     con.close()
@@ -76,9 +68,7 @@ def index_lost():
 
 @app.route('/result', methods=["GET", "POST"])
 def result_post():
-    # テンプレートから新規登録する商品名と値段を取得
-    #name = request.form.get("name")
-    #name = name
+
     file = request.files['example']
     file.save(os.path.join('templates/kabegami', file.filename))
     name = file.filename
@@ -86,7 +76,6 @@ def result_post():
     # データベースを開く
     con = get_db()
 
-    # コードは既に登録されているコードの最大値＋１の値で新規登録を行う
     cur = con.execute("select MAX(id) AS max_code from Images")
 
     cur2 = con.execute("select * from Images order by id")
@@ -125,7 +114,6 @@ def result_post():
 @app.route("/register", methods=["POST"])
 def register():
     
-
     con = get_db()
     sql3 = "select * from Images where image_keyword LIKE '%_?/keyword/?_%'"
     #cur = con.execute("select *  from Images where id = MAX(id)")
@@ -165,7 +153,6 @@ def register():
 @app.route("/delete/<int:id>", methods=["GET"])
 def delete_post(id):
 
-    
     con = get_db()
 
     sql2 = "DELETE FROM Images WHERE id = {}".format(id)
@@ -199,7 +186,6 @@ def open_image(id):
     pic4 = pic3.strip(")")
     pic5 = pic4.strip(",")
     pic6 = pic5.strip("'")
-    
     
     path = "templates/kabegami/{}".format(pic6)
     
