@@ -3,8 +3,9 @@ VSCodeで実行することを想定しています。ZIPファイルをダウ�
 <p></p>
 <br>
 kabegamiディレクトリ内の画像は自身の創作物になります。
+<p></p>
 <br>
-ImagePicAppの説明がされているページです
+ImagePicAppの説明がされているページです。
 <br>
 URL : https://yuto141592.github.io/about_ImagePicApp/
 <p></p>
