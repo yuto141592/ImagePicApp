@@ -16,7 +16,7 @@
           <a class="btn-a-10" href="/result2" role="button">Key words</a>
         </li>
         <li>
-          <a class="btn-a-12" href="#register" role="button">Register</a>
+          <a class="btn-a-12" href="#example" role="button">Register</a>
         </li>
       </ul>
 </nav>
@@ -61,7 +61,7 @@
 <footer>
     <div class="thum_box">
             
-        <div class="card" style="margin: auto;">
+        <div id="example" class="card" style="margin: auto;">
             <h2>Register Keyword</h2>
             <form action="{{url_for('result_post')}}" method="POST" enctype="multipart/form-data">
                 <input type="file" name="example" accept="image/*"><input type="submit" value="upload">
