@@ -1,5 +1,5 @@
 # ImagePicApp
-VSCodeで実行することを想定しています。ZIPファイルをダウンロードしていただき、VSCodeでFile>Open Folder...からImagePicApp-mainを開いてください。その後適切な環境でImagePicApp.pyファイルを実行し、'http://localhost:5000/' のリンクに飛ぶとImagePicAppがご利用いただけます（readme.txtファイル記載の環境で実行可能であることは確認済み）。
+VSCodeで実行することを想定しています。ZIPファイルをダウンロードしていただき、VSCodeで File>Open Folder... からImagePicApp-mainを開いてください。その後適切な環境でImagePicApp.pyファイルを実行し、'http://localhost:5000/' のリンクに飛ぶとImagePicAppをご利用いただけます（readme.txtファイル記載の環境で実行可能であることは確認済み）。
 <p></p>
 <br>
 kabegamiディレクトリ内の画像は自身の創作物になります。
