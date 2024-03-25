@@ -16,7 +16,7 @@
           <a class="btn-a-10" href="/result2" role="button">Key words</a>
         </li>
         <li>
-          <a class="btn-a-12" href="#register" role="button">Register</a>
+          <a class="btn-a-12" href="#example" role="button">Register</a>
         </li>
       </ul>
 </nav>
@@ -58,10 +58,10 @@
             <img src="kabegami/Images/_6_.png" width="780">
             <p></p><br>
             <h4>4. キーワードを編集する</h4>
-            <p></p>
+            <p>一度登録したキーワードは編集することが可能です。まずサムネイル下の＜Update＞をクリックします。</p>
             <img src="kabegami/Images/_7_.png" width="780">
             <p></p><br>
-            <p></p>
+            <p>入力フォームに新しいキーワードを登録してupdateをクリックすれば編集完了です。</p>
             <img src="kabegami/Images/_8_.png" width="780">
             <p></p><br>
             <h4>5. サムネイルを削除する</h4>
@@ -95,7 +95,7 @@
 <footer>
     <div class="thum_box">
             
-        <div class="card" style="margin: auto;">
+        <div id="example" class="card" style="margin: auto;">
             <h2>Register Keyword</h2>
             <form action="{{url_for('result_post')}}" method="POST" enctype="multipart/form-data">
                 <input type="file" name="example" accept="image/*"><input type="submit" value="upload">
