@@ -1,5 +1,5 @@
 # ImagePicApp
-VSCodeで実行することを想定しています。お手数ですが、[<>Code → Download ZIP] よりZIPファイルをダウンロードしていただき、VSCodeで File>Open Folder... からImagePicApp-mainを開いてImagePicApp.pyファイルを実行してください。'http://localhost:5000/' のリンクに飛ぶとImagePicAppをご利用いただけます。
+VSCodeで実行することを想定しています。お手数ですが、[<>Code ▼ → Download ZIP] よりZIPファイルをダウンロードしていただき、VSCodeで File>Open Folder... からImagePicApp-mainを開いてImagePicApp.pyファイルを実行してください。'http://localhost:5000/' のリンクに飛ぶとImagePicAppをご利用いただけます。
 <p></p>
 <br>
 kabegamiディレクトリ内の画像は自身の創作物になりますので著作権上の問題はございません。
