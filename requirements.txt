@@ -1,4 +1,4 @@
-Python 3.10.7
+Python==3.10.7
 absl-py==1.2.0
 aiohttp==3.8.3
 aiosignal==1.2.0
