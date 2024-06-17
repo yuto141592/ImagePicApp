@@ -41,6 +41,7 @@ google-pasta==0.2.0
 gradio==3.4.1
 greenlet==1.1.3
 grpcio==1.49.1
+Gunicorn
 h11==0.12.0
 h5py==3.7.0
 httpcore==0.15.0
